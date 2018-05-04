@@ -1,27 +1,37 @@
 body
 {
-    margin: 0;
-    padding: 0;
-}
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 25px);
+    font-family: 'helvetica';
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
+    linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
+    linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+    background-size:40px 60px;
+    }
 h1
 {
-    font-size: 70px;
-    text-align: center;
-    color: #333;
-    margin-top: 270px;
+    font-size: 8vmax;
+    color: #4C5B5C;
+    margin: 30vh auto;
+    text-shadow: 2px 2px 2px rgba(120,120,120,0.3);
 }
 .button
 {
-    position: absolute;
-    font-size: 50px;
-    top: 6px;
-    right: 50px;
+    position: relative;
+    font-size: 6vmin;
+    margin: 1vmin;
     z-index: 999;
-   
+    text-align: end;
 }
 .button a
 {
     text-decoration: none;
+    color: #4C5B5C;
 }
 .btn-open::after
 {
@@ -50,27 +60,32 @@ h1
     display:none;
     position: fixed;
     height: 100%;
-    opacity: 0;
     width: 100%;
+    opacity: 0;
     top: 0;
-    background: rgb(247, 247, 71);
+    left:0;
+    background: #FFCA3A;
 }
 .nav-container
 {
-text-align: center;
-width: 90%;
-margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    margin: auto;
 }
 .nav-col
 {
-    padding: 200px 0px;
-    width: 24%;
-    display : inline-block;
+    display: flex;
+    flex-direction: column;
+    padding: 2vmin 3vmin;
+    margin: 2vmin;
+    border-left: 0.5vmin solid #4C5B5C;
 }
 .nav-col h2
 {
-    font-size: 50px;
-    color:#333;
+    font-size: 6vmin;
+    margin: auto 0;   
+    color: #4C5B5C;
+    text-shadow: 2px 2px 2px rgba(120,120,120,0.3);
 }
 .nav-col ul
 {
@@ -79,14 +94,16 @@ margin: 0 auto;
 }
 .nav-col ul li a
 {
-    color: #f0f0f0;
-    font-size: 18px;
-    display: block;
-    padding: 8px 0px;
+    color: #7A8450;
+    text-shadow: 1px 1px 1px rgba(120,120,120,0.5);
+    font-size: 4vmin;
+    display: flex;
+    flex-direction: column;
+    padding: 1vmin 0;
     text-decoration: none;
-    transition: color .2s;
+    transition: color .2s ease;
 }
 .nav-col ul li a:hover
 {
-    color: #1c9769;
+    color: #88AB75;
 }
