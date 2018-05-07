@@ -21,7 +21,7 @@ function toggleMenu(e)
 function fadeIn(elem,speed)
 {
     var inInterval=setInterval(function(){
-    elem.style.display="block";
+    elem.style.display="flex";
     elem.style.opacity=Number(elem.style.opacity) + 0.02;
     if(elem.style.opacity >= 1)
     {   
